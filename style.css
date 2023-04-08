@@ -1,29 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .header {
-    width: 100%;
-    height: 100px;
+    width: 1440px;
+    height: 1024px;
+    background-image: url(img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+.header__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
-
-.basic {
-    font-size: 35px;
-    line-height: 20px;
-    color: blueviolet;
-    padding-top: 20px;
-    margin-left: 500px;
+.header__text {
+    width: 481px;
+    height: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-left: 120px;
 }
-.content {
-    width: 100%;
-    height: 400px;
+.header__bold {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.header__button {
+    margin-top: 44px;
+    margin-left: 120px;
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+}
+.header__button:hover {
+    background: #EB443F;
+}
+.header__button-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
-.job {
-    font-size: 20px;
-    line-height: 20px;
-    color: blue;
+.gamemenu {
+    width: 1440px;
+    height: 556px;
+    background: #000915;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
 }
-.footer {
-    width: 100%;
-    height: 200px;
-    background-color: aqua;
+   
+.game__button {
+    height: 300px;
+    grid-column: span 4;
+    margin-top: 128px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+.game__button:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+    border-radius: 16px;
+}
+.game__button__1 {
+    background-image: url(img/game1.jpg);
+}
+.game__button__2 {
+    background-image: url(img/game2.jpg);
+}
+.game__button__3 {
+    background-image: url(img/game3.jpg);
 }
