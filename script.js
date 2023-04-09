@@ -1,3 +1,6 @@
+// let a = '10'; //1
+// alert (a); //
+
 // let a = '20'; //1
 // alert (a); //
 
@@ -19,15 +22,15 @@
 
 //let a = 9;//6
 //let b = 2;//
-//alert(a/b);//
+//alert(a % b);//
 
 //let num = 1;//7
-//num = num + 5;//
-//num = num - 3;//
-//num = num * 7;//
-//num = num / 3;//
-//num = num + 1;//
-//num = num - 1;//
+//num += 5;//
+//num -= 3;//
+//num *= 7;//
+//num /= 3;//
+//num += 1;//
+//num -= 1;//
 //alert(num);//
 
 //let year = Number(prompt('Сколько Вам лет?'))//8
@@ -38,6 +41,10 @@
   //alert( name ); // Olya//
   //alert( age ); // 30//
   //alert( isAdmin ); // false//
+  //user['city of residence'] = Vyborg;//
+  //user ['age'] = 25;//
+  //console.log(user);//
+  //delete user ['city of residence'];//
 //let info = prompt("Какую информацию хотите узнать о пользователе?", "name");//
 
 let name = prompt('Как Вас зовут?');
