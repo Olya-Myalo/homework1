@@ -47,5 +47,5 @@
   //delete user ['city of residence'];//
 //let info = prompt("Какую информацию хотите узнать о пользователе?", "name");//
 
-let name = prompt('Как Вас зовут?');
-alert('Привет ' + name + '!')
+//let name = prompt('Как Вас зовут?');//
+//alert('Привет ' + name + '!')//
