@@ -4,6 +4,7 @@
 }
 body {
     font-family: 'Montserrat';
+    background-color: #000915;
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -111,12 +112,16 @@ body {
     align-items: center;
     padding-left: 30px;
     padding-top: 80px;
-    border-radius: 16px;
+    border-radius: 30px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    align-items: flex-end;
 }
 .game__button:hover {
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
-    border: 3px solid #44D2FF;
-    border-radius: 16px;
+    border: 3px solid #44D2FF transparent;
+    border-radius: 30px;
 }
 .game__button__1 {
     background-image: url(img/game1.jpg);
@@ -130,6 +135,42 @@ body {
     background-image: url(img/game3.jpg);
     background-repeat: no-repeat;
     }
+.section {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.section__3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 282px;
+} 
+.section__3-heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+.section__3-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.section__3-img {
+    margin-top: 232px;
+    width: 485px;
+    height: 333px;
+}
+
 
 
 @media (max-width: 767px) {
@@ -142,8 +183,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 375px;
-    height: 735px;
 } 
     .header__heading {
         font-weight: 700;
@@ -188,4 +227,16 @@ body {
     top: 863px;
     margin-top: 0px;
     }
+    .section {
+        width: 375px;
+        height: 735px;
+        flex-wrap: wrap;
+    }
+    .section__3 {
+        margin-top: 51px;
+    } 
+    .section__3-img {
+        margin-top: 64px;
+    }
+    
 }
