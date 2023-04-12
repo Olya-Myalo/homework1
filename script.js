@@ -121,4 +121,31 @@
  // alert('Это нечётное число!')
 //}
 
+//let clientOS = 1; // 0 — iOS, 1 — Android//8
 
+//switch (clientOS) {
+  //case 0:
+ // alert('Установите версию приложения для iOS по ссылке');
+ //   break;
+  //case 1:
+ // alert('Установите версию приложения для Android по ссылке');
+  //  break;
+ // default:
+ // alert("Некорректное значение переменной clientOS");
+ //   break;
+//}
+
+let clientOS = Number(prompt('Какой операционной системой пользуетесь? Если iOS нажмите 0, Android - 1'));
+let clientDeviceYear = Number(prompt('Какого года выпуска Ваш смартфон?'))
+
+if (clientOS = 0 && clientDeviceYear < 2015) {
+  alert('Установите облегченную версию приложения для iOS по ссылке');
+} else if (clientOS = 1 && clientDeviceYear < 2015) {
+  alert('Установите облегченную версию приложения для Android по ссылке');
+} else if (clientOS = 0 && clientDeviceYear >= 2015) {
+  alert('Установите версию приложения для iOS по ссылке');
+} else if (clientOS = 1 && clientDeviceYear >= 2015) {
+  alert('Установите версию приложения для Android по ссылке');
+} else {
+  alert("Некорректное значение переменной clientOS");
+}
