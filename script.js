@@ -84,32 +84,32 @@
 //let b = 3;//
 //alert(a + b);//
 
-//let monthNumber = 12(prompt('Какой месяц по счету сейчас?'));//5
+//let monthNumber = Number(prompt('Какой месяц по счету сейчас?'));//5
 
 //switch (monthNumber) {
  // case 1:
- // case 2:
- // case 12:
- //   alert('Принадлежит к сезону - зима!');
+  //case 2:
+  //case 12:
+  //  alert('Принадлежит к сезону - зима!');
   //  break;
- // case 3:
+ //case 3:
  // case 4:
-  //case 5:
+ // case 5:
   //  alert('Принадлежит к сезону - весна!');
- //   break;
+  //  break;
  // case 6:
  // case 7:
  // case 8:
- //   alert('Принадлежит к сезону - лето!');
-//    break;
- // case 9:
- // case 10:
-//  case 11:
+  // alert('Принадлежит к сезону - лето!');
+  // break;
+ //case 9:
+ //case 10:
+ // case 11:
   //  alert('Принадлежит к сезону - осень!');
   //  break;
-  //default:
+ // default:
   //  alert('Такого месяца не существует!');
- //  break;
+  // break;
 //}
 
 //let num = Number(prompt('Пожалуйста, введите любое число'));//7
