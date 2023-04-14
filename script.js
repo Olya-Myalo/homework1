@@ -52,7 +52,7 @@
 
 
                         //HOMEWORK 3//
-//let password = String(prompt('Введите пароль'));//1
+//let password = (prompt('Введите пароль'));//1
 
 //if (password == 'пароль') {
 //  alert ('Пароль введён верно');
@@ -80,8 +80,8 @@
  // console.log ('Неверно');
 //}
 
-//let a = 2;//4
-//let b = 3;//
+//let a = '2';//4
+//let b = '3';//
 //alert(a + b);//
 
 //let monthNumber = Number(prompt('Какой месяц по счету сейчас?'));//5
@@ -138,13 +138,13 @@
 let clientOS = Number(prompt('Какой операционной системой пользуетесь? Если iOS нажмите 0, Android - 1'));
 let clientDeviceYear = Number(prompt('Какого года выпуска Ваш смартфон?'))
 
-if (clientOS = 0 && clientDeviceYear < 2015) {
+if (clientOS === 0 && clientDeviceYear < 2015) {
   alert('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS = 1 && clientDeviceYear < 2015) {
+} else if (clientOS === 1 && clientDeviceYear < 2015) {
   alert('Установите облегченную версию приложения для Android по ссылке');
-} else if (clientOS = 0 && clientDeviceYear >= 2015) {
+} else if (clientOS === 0 && clientDeviceYear >= 2015) {
   alert('Установите версию приложения для iOS по ссылке');
-} else if (clientOS = 1 && clientDeviceYear >= 2015) {
+} else if (clientOS === 1 && clientDeviceYear >= 2015) {
   alert('Установите версию приложения для Android по ссылке');
 } else {
   alert("Некорректное значение переменной clientOS");
