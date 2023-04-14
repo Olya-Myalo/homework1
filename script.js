@@ -135,17 +135,63 @@
  //   break;
 //}
 
-let clientOS = Number(prompt('Какой операционной системой пользуетесь? Если iOS нажмите 0, Android - 1'));
-let clientDeviceYear = Number(prompt('Какого года выпуска Ваш смартфон?'))
+//let clientOS = Number(prompt('Какой операционной системой пользуетесь? Если iOS нажмите 0, Android - 1'));
+//let clientDeviceYear = Number(prompt('Какого года выпуска Ваш смартфон?'))
 
-if (clientOS === 0 && clientDeviceYear < 2015) {
-  alert('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS === 1 && clientDeviceYear < 2015) {
-  alert('Установите облегченную версию приложения для Android по ссылке');
-} else if (clientOS === 0 && clientDeviceYear >= 2015) {
-  alert('Установите версию приложения для iOS по ссылке');
-} else if (clientOS === 1 && clientDeviceYear >= 2015) {
-  alert('Установите версию приложения для Android по ссылке');
-} else {
-  alert("Некорректное значение переменной clientOS");
+//if (clientOS === 0 && clientDeviceYear < 2015) {
+ // alert('Установите облегченную версию приложения для iOS по ссылке');
+//} else if (clientOS === 1 && clientDeviceYear < 2015) {
+ // alert('Установите облегченную версию приложения для Android по ссылке');
+//} else if (clientOS === 0 && clientDeviceYear >= 2015) {
+ // alert('Установите версию приложения для iOS по ссылке');
+//} else if (clientOS === 1 && clientDeviceYear >= 2015) {
+ // alert('Установите версию приложения для Android по ссылке');
+//} else {
+ // alert("Некорректное значение переменной clientOS");
+//}
+
+                        //HOMEWORK 4//
+//let i = 0;//1
+//while ( i < 2) {
+//   console.log("Привет");
+// i++;
+//}
+
+//let i = 1;//2
+//while (i <= 5) {
+//console.log(i); 
+//i++;
+//}
+
+//let i = 7;//3
+//while (i <= 22) {
+//console.log(i); 
+//i++;
+//}
+
+//const name = {//4
+//	'Коля': '200',
+//	'Вася': '300',
+//	'Петя': '400',
+//};
+//for (let salary in name) {  
+//  console.log(`${salary} зарплата ${name[salary]} долларов`); 
+//}
+
+//let n = 1000;//5
+//num = 0;
+//while (n > 50) {n /= 2
+ // console.log(n); 
+ // num++;
+ // }
+
+//num = 5
+
+let firstfriday = 3; 
+let day = firstfriday;
+while (day <= 31) {
+  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+  day += 7;
 }
+
+  
