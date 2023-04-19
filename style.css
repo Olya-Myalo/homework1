@@ -72,6 +72,7 @@ body {
 }
 .header__button:hover {
     background: #EB443F;
+    cursor: pointer;
 }
 .header__button-text {
     font-family: 'Montserrat';
@@ -119,22 +120,37 @@ body {
     display: flex;
     align-items: flex-end;
 }
-.game__button:hover {
-    border: 3px solid #44D2FF transparent;
-    border-radius: 30px;
-}
+
 .game__button__1 {
     background-image: url(img/game1.jpg);
     background-repeat: no-repeat;
+}
+.game__button__1:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
 }
 .game__button__2 {
     background-image: url(img/game2.jpg);
     background-repeat: no-repeat;
 }
+.game__button__2:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
 .game__button__3 {
     background-image: url(img/game3.jpg);
     background-repeat: no-repeat;
     }
+.game__button__3:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
 .section {
     width: 1440px;
     height: 800px;
@@ -168,7 +184,73 @@ body {
 .section__3-img {
     margin-top: 232px;
 }
-
+.section__4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 282px;
+}
+.section__4-img {
+    margin-top: 232px;
+}
+.section__riddles {
+    background-image: url(img/muse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 32px;
+}
+.riddles__heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-left: 404px;
+}
+.riddles__paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+.riddles__button {
+        width: 234.06px;
+        height: 48.6px;
+        left: 120px;
+        top: 482.11px;
+        background: #9C0332;
+        border-radius: 30px;
+        margin-left: 488px;
+        margin-top: 32px;
+    }
+    .riddles__button:hover {
+        background: #EB443F;
+        cursor: pointer;
+}
+.footer {
+    width: 1440px;
+    height: 80px;
+}
+.footer__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 532px;
+    margin-top: 32px;
+}
 
 
 @media (max-width: 767px) {
@@ -227,7 +309,7 @@ body {
     }
     .section {
         width: 375px;
-        height: 735px;
+        height: 633px;
         flex-wrap: wrap;
     }
     .section__3 {
@@ -236,5 +318,4 @@ body {
     .section__3-img {
         margin-top: 64px;
     }
-    
 }

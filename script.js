@@ -216,41 +216,58 @@
  //let result = i(9);
  //console.log (result);
 
- //function number(num) {//3.1
+//function number(num) {//3.2
   //return num * num
 //}
 //console.log(number(7))
-
-//function answer() { //4
-  //let number = prompt("Сколько Вам лет?"); 
-  //if (number < 0) { 
-  //  alert("Вы ввели неправильное значение"); 
-  //} else if (number >= 0 && number <= 12) { 
-  //  alert("Привет, друг!"); 
-  //} else { 
-  //  alert("Добро пожаловать!"); 
- //} 
-//} 
-
-
-//function multiplyNumbers(num1, num2) {//5
- // if (isNaN(num1) || isNaN(num2)) {
-  //  return 'Одно или оба значения не являются числом';
- // } else {
- //   return num1 * num2;
- // }
+// function number(num) { //3.1
+ // console.log(number(7))
 //}
-//let multiply = multiplyNumbers('я', 7);
-//console.log(multiply);
 
-//function number() { //6
-  //let n = prompt("Введите число"); 
- // if (isNaN(n)) { 
-  //   return 'Переданный параметр не является числом'; 
- //  } else { 
-  //  return n * n * n; 
- // } 
-//}
+// function answer() { //4 предполагается, что пользователь вводит  только числа
+//   let number = +prompt("Сколько Вам лет?"); 
+//   if (number < 0) { 
+//     alert("Вы ввели неправильное значение"); 
+//   } else if (number >= 0 && number <= 12) { 
+//     alert("Привет, друг!"); 
+//   } else { 
+//     alert("Добро пожаловать!"); 
+//  } 
+// } 
+
+// function isNumber(num) { //5
+//   if (typeof num == "number" && !isNaN(num)) {
+//     return true
+//   }
+//   else if (typeof num == "string"){
+//   if (num == "") {
+//     return false
+//   }
+//    num = +num; 
+//    if (!isNaN(num)) {
+//     return true
+//    }
+//   }
+//   return false
+// }
+
+// function multiplyNumbers(num1, num2) {
+//  if (isNumber(num1) && isNumber(num2)) {
+//   return +num1 * +num2;
+//  }
+//  return 'Одно или оба значения не являются числом';
+// }
+// let multiply = multiplyNumbers('я', 7);
+// console.log(multiply);
+
+// function number() { //6
+//   let n = prompt("Введите число"); 
+//  if (isNaN(n)) { 
+//     return 'Переданный параметр не является числом'; 
+//   } else { 
+//    return n * n * n; 
+//  } 
+// }
 
 //function getCircleArea() {//7
  // return this.R * this.R * π;
@@ -274,20 +291,22 @@
 //console.log(circle2.getArea());
 //console.log(circle2.getPerimeter());
 
-function game1() {
-  let num = prompt('Для выбора игры введите номер месяца');
-  if (num === 12 || num === 1 || num === 2) {
-    alert('ЗИМА');
-  } else if (num === 3 || num === 4 || num === 5) {
-    alert('ВЕСНА');
-  } else if (num === 6 || num === 7 || num === 8) {
-    alert('ЛЕТО');
-  } else if (num === 9 || num === 10 || num === 11) {
-    alert('ОСЕНЬ');
-  } else {
-    alert('Поиграть не удасться');
-  }
+script
+function game1() { 
+  let num = prompt('Введите номер месяца'); 
+  if (num === '12' || num === '1' || num === '2') { 
+    alert('ЗИМА'); 
+  } else if (num === '3' || num === '4' || num === '5') { 
+    alert('ВЕСНА'); 
+  } else if (num === '6' || num === '7' || num === '8') { 
+    alert('ЛЕТО'); 
+  } else if (num === '9' || num === '10' || num === '11') { 
+    alert('ОСЕНЬ'); 
+  } else { 
+    alert('Поиграть не удастся'); 
+  } 
 }
+
 
 
 
