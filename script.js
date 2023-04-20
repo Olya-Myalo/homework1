@@ -195,24 +195,12 @@
 //}
 
                         //HOMEWORK 5//
-//function min(a, b) {//1
- //if (a > b) {
- // return b;
- //} else {
- // return a;
-// } 
-//};
+//const min = (a, b) => a > b ? b : a;//1
 //let result = min(8, 4);
 //let result = min(6, 6);
 //console.log (result);
 
-//function i (a) { //2
-  //if (a % 2 == 0) {
-  // return ("Число четное");
-  //} else {
-  // return ("Число нечетное");
- //} 
-// };
+//const i = (a) => a % 2 == 0 > "Число четное" ? "Число нечетное";//2
  //let result = i(9);
  //console.log (result);
 
@@ -253,7 +241,7 @@
 
 // function multiplyNumbers(num1, num2) {
 //  if (isNumber(num1) && isNumber(num2)) {
-//   return +num1 * +num2;
+//   Nubmer(num1) * Number(num2);
 //  }
 //  return 'Одно или оба значения не являются числом';
 // }
@@ -265,7 +253,7 @@
 //  if (isNaN(n)) { 
 //     return 'Переданный параметр не является числом'; 
 //   } else { 
-//    return n * n * n; 
+//    return n ** 3; 
 //  } 
 // }
 

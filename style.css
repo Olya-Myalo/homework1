@@ -11,7 +11,7 @@ body {
     padding-right: calc(50% - 600px);
 }
 .header {
-    background-image: url(img/fon.jpg);
+    background-image: url("img/fon.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -122,7 +122,7 @@ body {
 }
 
 .game__button__1 {
-    background-image: url(img/game1.jpg);
+    background-image: url("img/game1.jpg");
     background-repeat: no-repeat;
 }
 .game__button__1:hover {
@@ -132,7 +132,7 @@ body {
     cursor: pointer;
 }
 .game__button__2 {
-    background-image: url(img/game2.jpg);
+    background-image: url("img/game2.jpg");
     background-repeat: no-repeat;
 }
 .game__button__2:hover {
@@ -142,7 +142,7 @@ body {
     cursor: pointer;
 }
 .game__button__3 {
-    background-image: url(img/game3.jpg);
+    background-image: url("img/game3.jpg");
     background-repeat: no-repeat;
     }
 .game__button__3:hover {
@@ -151,28 +151,28 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
-.section {
+.seasons {
     width: 1440px;
     height: 800px;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
-.section__3 {
+.seasons__menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-top: 282px;
 } 
-.section__3-heading {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 59px;
-        color: #FFFFFF;
+.seasons__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
     }
-.section__3-text {
+.seasons__text {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -181,25 +181,63 @@ body {
     align-items: center;
     color: #FFFFFF;
 }
-.section__3-img {
-    margin-top: 232px;
+.img__game {
+    margin-top: 233px;
 }
-.section__4 {
+.section__game {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.wordgame {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-top: 282px;
 }
-.section__4-img {
-    margin-top: 232px;
+.wordgame__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    }
+.wordgame__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
+.img__game-two {
+    margin-top: 233px;
+}
+.wordgame__button {
+        margin-top: 44px;
+        width: 234.06px;
+        height: 48.6px;
+        left: 120px;
+        top: 482.11px;
+        background: #9C0332;
+        border-radius: 30px;
+        margin-bottom: 493px;
+    }
+    .wordgame__button:hover {
+        background: #EB443F;
+        cursor: pointer;
+    }
 .section__riddles {
-    background-image: url(img/muse.png);
+    background-image: url("img/muse.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -214,7 +252,7 @@ body {
     color: #FFFFFF;
     margin-left: 404px;
 }
-.riddles__paragraph {
+.riddles__text {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -232,7 +270,7 @@ body {
         margin-left: 488px;
         margin-top: 32px;
     }
-    .riddles__button:hover {
+.riddles__button:hover {
         background: #EB443F;
         cursor: pointer;
 }
@@ -254,68 +292,135 @@ body {
 
 
 @media (max-width: 767px) {
-   .center {
+.center {
     padding-left: 16px;
     padding-right: 16px;
    }
-   .header {
+.header {
     background-image: url(img/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 } 
-    .header__heading {
-        font-weight: 700;
+.header__heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    }
+.header__button-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    }
+.br {
+    display: inline;
+    }
+.header__button-text-1 {
+    font-weight: 700;
+    }
+.header__button {
+    text-align: center;
+    margin-left: 55px;
+    }
+.wordgame__button {
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+.menu {
+        width: 375px;
+        height: 1221px;
+    }
+.gamemenu {
+        flex-wrap: wrap;
+    }
+.game__button {
+        width: 343px;
+        height: 300px;
+        left: 16px;
+        top: 863px;
+        margin-top: 0px;
+    }
+.seasons {
+        width: 375px;
+        height: 633px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100;
+    }
+.section__game {
+        width: 375px;
+        height: 633px;
+        flex-wrap: wrap;
+        margin-top: 51px;
+    }
+.seasons__menu {
+        margin-top: 51px;
+    } 
+.seasons__heading {
         font-size: 32px;
         line-height: 39px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 32px;
+        margin-left: 50px;
     }
-    .header__button-text {
-        font-weight: 300;
+.seasons__text {
         font-size: 14px;
         line-height: 22px;
         display: flex;
         align-items: center;
-        text-align: center;
     }
-    .br {
-        display: inline;
-    }
-    .header__button-text-1 {
-        font-weight: 700;
-    }
-    .header__button {
-        text-align: center;
-        margin-left: 60px;
-    }
-    .header__button {
-        margin-bottom: 390px;
-    }
-    .menu {
-        width: 375px;
-        height: 1221px;
-    }
-    .gamemenu {
-        flex-wrap: wrap;
-    }
-    .game__button {
-    width: 343px;
-    height: 300px;
-    left: 16px;
-    top: 863px;
-    margin-top: 0px;
-    }
-    .section {
-        width: 375px;
-        height: 633px;
-        flex-wrap: wrap;
-    }
-    .section__3 {
-        margin-top: 51px;
-    } 
-    .section__3-img {
+.img__game {
+        width: 343px;
         margin-top: 64px;
+    }
+.wordgame {
+    margin-top: 51px;
+    align-items: flex-start;
+}
+.wordgame__heading {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 32px;
+    margin-left: 50px;
+}
+.wordgame__text {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+}
+.img__game-two {
+    width: 343px;
+    margin-top: 64px;
+    }
+.section__riddles {
+    width: 788px;
+    height: 633px;
+    flex-wrap: wrap;
+    }
+.riddles__heading {
+     font-size: 32px;
+    line-height: 39px;
+    margin-left: 25px;
+    }
+.riddles__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 12px;
+    }
+.riddles__button {
+    margin-left: 55px;
+    }
+.footer {
+    width: 375px;
+    }
+.footer__heading {
+    margin-left: 110px;
     }
 }
