@@ -43,12 +43,12 @@ body {
 .br {
     display: none;
 }
-    .header__text-1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 32px;
-    }
+.header__text-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+ }
 
 .header__bold {
     font-family: 'Montserrat';
@@ -126,7 +126,7 @@ body {
     background-repeat: no-repeat;
 }
 .game__button__1:hover {
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
     border: 3px solid #44D2FF;
     border-radius: 30px;
     cursor: pointer;
@@ -136,7 +136,7 @@ body {
     background-repeat: no-repeat;
 }
 .game__button__2:hover {
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
     border: 3px solid #44D2FF;
     border-radius: 30px;
     cursor: pointer;
@@ -146,7 +146,7 @@ body {
     background-repeat: no-repeat;
     }
 .game__button__3:hover {
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0003 (1).jpg);
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
     border: 3px solid #44D2FF;
     border-radius: 30px;
     cursor: pointer;
@@ -303,13 +303,16 @@ body {
     background-size: cover;
 } 
 .header__heading {
-    font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 20px;
     }
+.header__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 15px;
+}
 .header__button-text {
     font-weight: 300;
     font-size: 14px;
@@ -317,6 +320,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: 2px;
     }
 .br {
     display: inline;
@@ -336,6 +340,7 @@ body {
 .menu {
         width: 375px;
         height: 1221px;
+        margin-top: 128px;
     }
 .gamemenu {
         flex-wrap: wrap;
