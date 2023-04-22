@@ -294,32 +294,3 @@ function game1() {
     alert('Поиграть не удастся'); 
   } 
 }
-
-
-// function sum(a, b) {
-//   if (typeof a === 'number' && typeof b === 'number') {
-//     return a / b;
-//   }
-//  else if (b == 0) {
-//     return 'На ноль делить нельзя';
-//   }
-//   else {return "Параметр не является числом"}
-// }
-// console.log(sum);
-
-
-// function multiply(a, b, c) {
-//   a = +a;
-//   b = +b;
-//   c = +c;
-//   if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
-//     return a * b * c;
-//   }
-//     else { return NaN;
-//     }
-//   }
-window.alert('Hello World!')
-``
-
-
-  

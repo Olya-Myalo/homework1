@@ -15,11 +15,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
+    width: 100%;
     height: 1024px;
 } 
 .header__top {
-    margin-top: 205px;
+    padding-top: 205px;
 }
 .header__heading {
     font-family: 'Montserrat';
@@ -30,7 +30,6 @@ body {
     color: #FFFFFF;
 }
 .header__text {
-    width: 481px;
     height: 64px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -41,7 +40,7 @@ body {
     margin-top: 20px;
 }
 .br {
-    display: none;
+    display: inline;
 }
 .header__text-1 {
     font-style: normal;
@@ -86,7 +85,7 @@ body {
     text-decoration: none;
 }
 .menu {
-    width: 1440px;
+    width: 100%;
     height: 556px;
     background: #000915;
 }
@@ -152,7 +151,7 @@ body {
     cursor: pointer;
 }
 .seasons {
-    width: 1440px;
+    width: 100%;
     height: 800px;
     display: flex;
     flex-wrap: nowrap;
@@ -185,13 +184,13 @@ body {
     margin-top: 233px;
 }
 .section__game {
-    width: 1440px;
     height: 800px;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    gap: 135px;
 }
 .wordgame {
     display: flex;
@@ -220,14 +219,14 @@ body {
     margin-top: 233px;
 }
 .wordgame__button {
-        margin-top: 44px;
-        width: 234.06px;
-        height: 48.6px;
-        left: 120px;
-        top: 482.11px;
-        background: #9C0332;
-        border-radius: 30px;
-        margin-bottom: 493px;
+    margin-top: 44px;
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+    margin-bottom: 493px;
     }
     .wordgame__button:hover {
         background: #EB443F;
@@ -244,13 +243,14 @@ body {
     justify-content: space-around;
     flex-wrap: nowrap;
     gap: 32px;
+    text-align: center;
+
 }
 .riddles__heading {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
     color: #FFFFFF;
-    margin-left: 404px;
 }
 .riddles__text {
     font-style: normal;
@@ -261,21 +261,19 @@ body {
     margin-top: 32px;
 }
 .riddles__button {
-        width: 234.06px;
-        height: 48.6px;
-        left: 120px;
-        top: 482.11px;
-        background: #9C0332;
-        border-radius: 30px;
-        margin-left: 488px;
-        margin-top: 32px;
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+    margin-top: 32px;
     }
 .riddles__button:hover {
-        background: #EB443F;
-        cursor: pointer;
+    background: #EB443F;
+    cursor: pointer;
 }
 .footer {
-    width: 1440px;
     height: 80px;
 }
 .footer__heading {
@@ -286,8 +284,8 @@ body {
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    margin-left: 532px;
     margin-top: 32px;
+    margin-left: 520px;
 }
 
 
@@ -306,12 +304,15 @@ body {
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 32px;
-    margin-left: 20px;
+    text-align: center;
+    }
+    .br {
+        display: none;
     }
 .header__text {
     font-size: 14px;
     line-height: 22px;
-    margin-left: 15px;
+    text-align: center;
 }
 .header__button-text {
     font-weight: 300;
@@ -322,9 +323,7 @@ body {
     text-align: center;
     margin-bottom: 2px;
     }
-.br {
-    display: inline;
-    }
+
 .header__button-text-1 {
     font-weight: 700;
     }
@@ -332,38 +331,27 @@ body {
     text-align: center;
     margin-left: 55px;
     }
-.wordgame__button {
-    text-align: center;
-    margin-left: 60px;
-    margin-bottom: 5px;
-}
 .menu {
-        width: 375px;
-        height: 1221px;
-        margin-top: 128px;
+    height: 1221px;
+    margin-top: 128px;
     }
 .gamemenu {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     }
 .game__button {
-        width: 343px;
-        height: 300px;
-        left: 16px;
-        top: 863px;
-        margin-top: 0px;
+    height: 300px;
+    left: 16px;
+    top: 863px;
+    margin-top: 0px;
     }
 .seasons {
-        width: 375px;
-        height: 633px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 100;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100;
     }
 .section__game {
-        width: 375px;
-        height: 633px;
-        flex-wrap: wrap;
-        margin-top: 51px;
+    height: 633px;
+    flex-wrap: wrap;
     }
 .seasons__menu {
         margin-top: 51px;
@@ -379,6 +367,7 @@ body {
         line-height: 22px;
         display: flex;
         align-items: center;
+        text-align: center;
     }
 .img__game {
         width: 343px;
@@ -392,38 +381,34 @@ body {
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 32px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .wordgame__text {
     font-size: 14px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+}
+.wordgame__button {
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 5px;
 }
 .img__game-two {
     width: 343px;
     margin-top: 64px;
     }
 .section__riddles {
-    width: 788px;
     height: 633px;
     flex-wrap: wrap;
     }
 .riddles__heading {
-     font-size: 32px;
+    font-size: 32px;
     line-height: 39px;
-    margin-left: 25px;
-    }
+    text-align: center;
+}
 .riddles__text {
     font-size: 14px;
     line-height: 22px;
-    margin-left: 12px;
-    }
-.riddles__button {
-    margin-left: 55px;
-    }
-.footer {
-    width: 375px;
     }
 .footer__heading {
     margin-left: 110px;
