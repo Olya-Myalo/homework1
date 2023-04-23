@@ -11,15 +11,15 @@ body {
     padding-right: calc(50% - 600px);
 }
 .header {
-    background-image: url(img/fon.jpg);
+    background-image: url("img/fon.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
+    width: 100%;
     height: 1024px;
 } 
 .header__top {
-    margin-top: 205px;
+    padding-top: 205px;
 }
 .header__heading {
     font-family: 'Montserrat';
@@ -30,7 +30,6 @@ body {
     color: #FFFFFF;
 }
 .header__text {
-    width: 481px;
     height: 64px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -41,14 +40,14 @@ body {
     margin-top: 20px;
 }
 .br {
-    display: none;
+    display: inline;
 }
-    .header__text-1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 32px;
-    }
+.header__text-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+ }
 
 .header__bold {
     font-family: 'Montserrat';
@@ -72,6 +71,7 @@ body {
 }
 .header__button:hover {
     background: #EB443F;
+    cursor: pointer;
 }
 .header__button-text {
     font-family: 'Montserrat';
@@ -85,7 +85,7 @@ body {
     text-decoration: none;
 }
 .menu {
-    width: 1440px;
+    width: 100%;
     height: 556px;
     background: #000915;
 }
@@ -119,44 +119,59 @@ body {
     display: flex;
     align-items: flex-end;
 }
-.game__button:hover {
-    border: 3px solid #44D2FF transparent;
-    border-radius: 30px;
-}
+
 .game__button__1 {
-    background-image: url(img/game1.jpg);
+    background-image: url("img/game1.jpg");
     background-repeat: no-repeat;
+}
+.game__button__1:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
 }
 .game__button__2 {
-    background-image: url(img/game2.jpg);
+    background-image: url("img/game2.jpg");
     background-repeat: no-repeat;
 }
+.game__button__2:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
 .game__button__3 {
-    background-image: url(img/game3.jpg);
+    background-image: url("img/game3.jpg");
     background-repeat: no-repeat;
     }
-.section {
-    width: 1440px;
+.game__button__3:hover {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("0003 (1).jpg");
+    border: 3px solid #44D2FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.seasons {
+    width: 100%;
     height: 800px;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
-.section__3 {
+.seasons__menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-top: 282px;
 } 
-.section__3-heading {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 59px;
-        color: #FFFFFF;
+.seasons__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
     }
-.section__3-text {
+.seasons__text {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -165,78 +180,237 @@ body {
     align-items: center;
     color: #FFFFFF;
 }
-.section__3-img {
-    margin-top: 232px;
-    width: 485px;
-    height: 333px;
+.img__game {
+    margin-top: 233px;
+}
+.section__game {
+    height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 135px;
+}
+.wordgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 282px;
+}
+.wordgame__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    }
+.wordgame__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.img__game-two {
+    margin-top: 233px;
+}
+.wordgame__button {
+    margin-top: 44px;
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+    margin-bottom: 493px;
+    }
+    .wordgame__button:hover {
+        background: #EB443F;
+        cursor: pointer;
+    }
+.section__riddles {
+    background-image: url("img/muse.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 32px;
+    text-align: center;
+
+}
+.riddles__heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+.riddles__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+.riddles__button {
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+    margin-top: 32px;
+    }
+.riddles__button:hover {
+    background: #EB443F;
+    cursor: pointer;
+}
+.footer {
+    height: 80px;
+}
+.footer__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-left: 520px;
 }
 
 
-
 @media (max-width: 767px) {
-   .center {
+.center {
     padding-left: 16px;
     padding-right: 16px;
    }
-   .header {
+.header {
     background-image: url(img/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 } 
-    .header__heading {
-        font-weight: 700;
+.header__heading {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 32px;
+    text-align: center;
+    }
+    .br {
+        display: none;
+    }
+.header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.header__button-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+    }
+
+.header__button-text-1 {
+    font-weight: 700;
+    }
+.header__button {
+    text-align: center;
+    margin-left: 55px;
+    }
+.menu {
+    height: 1221px;
+    margin-top: 128px;
+    }
+.gamemenu {
+    flex-wrap: wrap;
+    }
+.game__button {
+    height: 300px;
+    left: 16px;
+    top: 863px;
+    margin-top: 0px;
+    }
+.seasons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100;
+    }
+.section__game {
+    height: 633px;
+    flex-wrap: wrap;
+    }
+.seasons__menu {
+        margin-top: 51px;
+    } 
+.seasons__heading {
         font-size: 32px;
         line-height: 39px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 32px;
+        margin-left: 50px;
     }
-    .header__button-text {
-        font-weight: 300;
+.seasons__text {
         font-size: 14px;
         line-height: 22px;
         display: flex;
         align-items: center;
         text-align: center;
     }
-    .br {
-        display: inline;
-    }
-    .header__button-text-1 {
-        font-weight: 700;
-    }
-    .header__button {
-        text-align: center;
-        margin-left: 60px;
-    }
-    .header__button {
-        margin-bottom: 390px;
-    }
-    .menu {
-        width: 375px;
-        height: 1221px;
-    }
-    .gamemenu {
-        flex-wrap: wrap;
-    }
-    .game__button {
-    width: 343px;
-    height: 300px;
-    left: 16px;
-    top: 863px;
-    margin-top: 0px;
-    }
-    .section {
-        width: 375px;
-        height: 735px;
-        flex-wrap: wrap;
-    }
-    .section__3 {
-        margin-top: 51px;
-    } 
-    .section__3-img {
+.img__game {
+        width: 343px;
         margin-top: 64px;
     }
-    
+.wordgame {
+    margin-top: 51px;
+    align-items: flex-start;
+}
+.wordgame__heading {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 32px;
+    margin-left: 30px;
+}
+.wordgame__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.wordgame__button {
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+.img__game-two {
+    width: 343px;
+    margin-top: 64px;
+    }
+.section__riddles {
+    height: 633px;
+    flex-wrap: wrap;
+    }
+.riddles__heading {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+.riddles__text {
+    font-size: 14px;
+    line-height: 22px;
+    }
+.footer__heading {
+    margin-left: 110px;
+    }
 }

@@ -187,11 +187,110 @@
 
 //num = 5
 
-let firstfriday = 3; 
-let day = firstfriday;
-while (day <= 31) {
-  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
-  day += 7;
-}
+//let firstfriday = 3; 
+///let day = firstfriday;
+//while (day <= 31) {
+  ///console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+  //day += 7;
+//}
 
-  
+                        //HOMEWORK 5//
+//const min = (a, b) => a > b ? b : a;//1
+//let result = min(8, 4);
+//let result = min(6, 6);
+//console.log (result);
+
+//const i = (a) => a % 2 == 0 > "Число четное" ? "Число нечетное";//2
+ //let result = i(9);
+ //console.log (result);
+
+//function number(num) {//3.2
+  //return num * num
+//}
+//console.log(number(7))
+// function number(num) { //3.1
+ // console.log(number(7))
+//}
+
+// function answer() { //4 предполагается, что пользователь вводит  только числа
+//   let number = +prompt("Сколько Вам лет?"); 
+//   if (number < 0) { 
+//     alert("Вы ввели неправильное значение"); 
+//   } else if (number >= 0 && number <= 12) { 
+//     alert("Привет, друг!"); 
+//   } else { 
+//     alert("Добро пожаловать!"); 
+//  } 
+// } 
+
+// function isNumber(num) { //5
+//   if (typeof num == "number" && !isNaN(num)) {
+//     return true
+//   }
+//   else if (typeof num == "string"){
+//   if (num == "") {
+//     return false
+//   }
+//    num = +num; 
+//    if (!isNaN(num)) {
+//     return true
+//    }
+//   }
+//   return false
+// }
+
+// function multiplyNumbers(num1, num2) {
+//  if (isNumber(num1) && isNumber(num2)) {
+//   Nubmer(num1) * Number(num2);
+//  }
+//  return 'Одно или оба значения не являются числом';
+// }
+// let multiply = multiplyNumbers('я', 7);
+// console.log(multiply);
+
+// function number() { //6
+//   let n = prompt("Введите число"); 
+//  if (isNaN(n)) { 
+//     return 'Переданный параметр не является числом'; 
+//   } else { 
+//    return n ** 3; 
+//  } 
+// }
+
+//function getCircleArea() {//7
+ // return this.R * this.R * π;
+//}
+//function getCirclePerimeter() {
+ // return 2 * π + this.R;
+//}
+//const circle1 = {
+//  R: 2,
+//  getArea: getCircleArea,
+//  getPerimeter: getCirclePerimeter,
+//};
+//const circle2 = {
+ // R: 7,
+ // getArea: getCircleArea,
+ // getPerimeter: getCirclePerimeter,
+//};
+//const π = 3.14;
+//console.log(circle1.getArea());
+//console.log(circle1.getPerimeter());
+//console.log(circle2.getArea());
+//console.log(circle2.getPerimeter());
+
+script
+function game1() { 
+  let num = prompt('Введите номер месяца'); 
+  if (num === '12' || num === '1' || num === '2') { 
+    alert('ЗИМА'); 
+  } else if (num === '3' || num === '4' || num === '5') { 
+    alert('ВЕСНА'); 
+  } else if (num === '6' || num === '7' || num === '8') { 
+    alert('ЛЕТО'); 
+  } else if (num === '9' || num === '10' || num === '11') { 
+    alert('ОСЕНЬ'); 
+  } else { 
+    alert('Поиграть не удастся'); 
+  } 
+}
