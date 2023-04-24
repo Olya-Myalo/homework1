@@ -294,3 +294,116 @@ function game1() {
     alert('Поиграть не удастся'); 
   } 
 }
+// function sum(a, b) {
+//   if (typeof a === 'number' && typeof b === 'number') {
+//     return a / b;
+//   }
+//  else if (b == 0) {
+//     return 'На ноль делить нельзя';
+//   }
+//   else {return "Параметр не является числом"}
+// }
+// console.log(sum);
+
+
+// function multiply(a, b, c) {
+//   a = +a;
+//   b = +b;
+//   c = +c;
+//   if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+//     return a * b * c;
+//   }
+//     else { return NaN;
+//     }
+//   }
+
+
+
+                        //HOMEWORK 6//
+// const numbs = [1, 5, 4, 10, 0, 3];//1
+// for (let i = 0; i < numbs.length; i++) {
+// 	console.log(numbs[i]);
+//if (numbs[i] == 10) break;
+// }
+
+// const numbs = [1, 5, 4, 10, 0, 3];//2
+// console.log(numbs.indexOf(4));
+
+// const numbs = [1, 3, 5, 10, 20];//3
+// console.log(numbs.join(' '));
+
+// const array = [];// 4 
+// for (let i = 0; i < 3; i++) {
+//   const inner_array =[];
+//   for (let j = 0; j < 3; j++) {
+//     inner_array.push(j + 1)
+//   }
+//   array.push(inner_array);
+// }
+// console.log(array);
+
+// const numbs = [1, 1, 1]; //5
+// numbs.push(2, 2, 2)
+// console.log(numbs);
+
+// const arr = [9, 8, 7, 'a', 6, 5];//6
+// arr.sort();
+// arr.pop('a');
+// console.log(arr);
+
+//console.log([9, 8, 7, 6, 5].includes(+prompt('Введите число')) ? 'Да' : 'Нет');//7
+
+// let str = 'abcdef';//8 
+// let arr = str.split('');
+// let array = arr.reverse();
+// let result = array.join('');
+// console.log(result);
+
+// const arrayOne = [[1, 2, 3,],[4, 5, 6]];//9
+// const result = [].concat(...arrayOne);
+// console.log(result);
+
+// const arr = [];//10
+// for (let i = 1; i <= 10; i++) {
+// 	let randomInt = Math.floor(Math.random() * 10);
+//   arr.push(randomInt);
+// }
+// console.log(arr);
+// for (let i = 0; i < 9; i++) {
+//   console.log(arr[i]+arr[i+ 1]);
+// }
+
+// const numbers = [1, 2, 3];//11
+// function squareArr(numbers) {
+//   const result = numbers.map(function(elem) {
+//     return elem * elem;
+//   });
+//   return result;
+// }
+// console.log(squareArr(numbers));
+
+// let arr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+// function getLengthWords(arr) { // 12
+//   let resultArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     resultArr.push(arr[i].length);
+//   }
+//   return resultArr;
+// }
+// console.log(getLengthWords(arr)); 
+
+// const numbers = [1, -2, 3, -4, 5];//13
+// const negativeNumbers = getNegativeOnly(numbers);
+// function getNegativeOnly(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(negativeNumbers); 
+
+
+
