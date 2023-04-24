@@ -429,19 +429,38 @@ function game1() {
 // let str = 'js';//1
 // console.log(str.toUpperCase());
 
-// const str = ['Кошка', 'Кит', 'Комар', 'Носорог'];//2 ОШИБКА
-// const syllable = 'ко';
-// const newStr = words();
-// function words() {
+// function searchStart(arr, str) {//2
 //   const resultArr =[];
-//   str.forEach((product) => {
-//     if (product.toLowerCase().startsWith(syllable.toLowerCase())) {
-//       console.log(product);
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
 //     }
 //   });
 //   return resultArr;
 // }
-// console.log(newStr);
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+
+// function searchStart(arr, str) {//2
+//   const resultArr =[];
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
+//     }
+//   });
+//   return resultArr;
+// }
+// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+
+// function searchStart(arr, str) {//2
+//   const resultArr =[];
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
+//     }
+//   });
+//   return resultArr;
+// }
+// searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
 
 // let num = 32.58884;//3
 // Math.floor(num);
@@ -495,15 +514,19 @@ function game1() {
 // console.log(fullDate); 
 
 script
+function stringEqual(str1, str2) {
+  let result = str1.toLowerCase() === str2.toLowerCase()
+  return result;
+}
 function game2() {
   let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
   arr = arr.sort(() => 0.5 - Math.random());
   alert(arr);
   let answerOne = prompt('Чему равнялся первый элемент массива?');
   let answerTwo = prompt('Чему равнялся последний элемент массива?');
-  if (answerOne === [0] && answerTwo === [6]) { 
+  if (stringEqual(answerOne, arr[0]) && stringEqual(answerTwo, arr[6])) { 
         alert("Поздравляю, Вы угадали оба элемента!"); 
-      } else if (answerOne === [0] || answerTwo === [6]) { 
+      } else if (stringEqual(answerOne, arr[0]) || stringEqual(answerTwo, arr[6])) { 
         alert("Вы были близки к победе!"); 
       } else { 
         alert("Нет, Вы ответили неверно :("); 
