@@ -298,7 +298,7 @@ function game1() {
 //   if (typeof a === 'number' && typeof b === 'number') {
 //     return a / b;
 //   }
-//  else if (b == 0) {
+//  else if (b === 0) {
 //     return 'На ноль делить нельзя';
 //   }
 //   else {return "Параметр не является числом"}
@@ -307,13 +307,18 @@ function game1() {
 
 
 // function multiply(a, b, c) {
+//   const numberArray = [];
+//   numberArray.push(a, b, c);
 //   a = +a;
 //   b = +b;
 //   c = +c;
 //   if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
 //     return a * b * c;
 //   }
-//     else { return NaN;
+//     else if (a === 0 || b === 0 || c === 0) { numberArray.indexOf(0)
+//     }
+//     if (numberArray.length === 0) {
+//       return 0;
 //     }
 //   }
 
@@ -405,25 +410,30 @@ function game1() {
 // }
 // console.log(negativeNumbers); 
 
-
-// Array.from({length: 10}, () => Math.floor(Math.random() * 10)); 14
-// function newArray(numberArray.filter({$0 % 2 == 0})) {
-//   return newArray;
+// const arr = [];
+// const newArr = [];
+// for (let i = 0; i < 10; i++) {
+//   arr.push(Math.floor(Math.random() * 10));
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//     newArr.push(arr[i]);
 //   }
-// // const newArray = numberArray.filter({$0 % 2 == 0});
-// console.log(Array);
-// console.log(newArray);
+// }
+// console.log(arr, newArr);
 
-// Array.from({length: 6}, () => Math.floor(Math.random() * 10)); 15
-// const getAverage = (numbers) => {
-//   let sum = 0; // объявляем переменную, в которой будет храниться сумма всех чисел массива
-//   for (let i = 0; i < numbers.length; i += 1) { // инициализируем цикл
-//     sum += numbers[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
+// const arr = [];
+// for (let i = 0; i < 6; i++) {
+//   arr.push(Math.floor(Math.random() * 10));
+// }
+// function sumArr() {
+//   let sum = (); // объявляем переменную, в которой будет храниться сумма всех чисел массива
+//   for (let i = 0; i < arr.length; i += 1) { // инициализируем цикл
+//     sum += arr[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
 //   }
-//   return sum / numbers.length; // возвращаем среднее арифметическое
-// };
-
-// console.log(getAverage(Array));
+//   return sum / arr.length; 
+// }
+// console.log(sumArr);
 
 /////////////////////////HOMEWORK 7
 // let str = 'js';//1
@@ -532,3 +542,71 @@ function game2() {
         alert("Нет, Вы ответили неверно :("); 
      } 
 }
+
+/////////////////////////HOMEWORK 8
+// const people = [//1
+//   { name: 'Глеб', age: 29 },
+//   { name: 'Анна', age: 17 },
+//   { name: 'Олег', age: 7 },
+//   { name: 'Оксана', age: 47 }
+// ];
+// people.sort((a, b) => a.age - b.age);
+// console.log(people);
+
+// function map(arr, mapFunction) {//2
+//   const resultArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     resultArr.push(mapFunction(arr[i]));
+//   }
+//   return resultArr;
+// }
+// function filter(arr, ruleFunction) {
+//   const resultArr = [];
+//   const mappedArr = map(arr, ruleFunction);
+//   for (let i = 0; i < mappedArr.length; i++) {
+//     if (mappedArr[i]) {
+//       resultArr.push(arr[i]);
+//     }
+//   }
+//   return resultArr;
+// }
+
+// function isPositive(num) {
+//   return num > 0;
+// }
+
+// function isMale(person) {
+//   return person.gender === 'male';
+// }
+// console.log(filter([3, -4, 1, 9], isPositive));
+// const people = [
+//   { name: 'Глеб', gender: 'male' },
+//   { name: 'Анна', gender: 'female' },
+//   { name: 'Олег', gender: 'male' },
+//   { name: 'Оксана', gender: 'female' }
+// ];
+// console.log(filter(people, isMale)); 
+
+// let date = setInterval(() => alert(new Date), 3000);//3
+// setTimeout(() => { clearInterval(date); alert('30 секунд прошло'); }, 30000);
+
+// function delayForSecond(callback) {//4
+//   setTimeout(callback, 1000);
+//   callback();
+// }
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
+
+// function delayForSecond(cb) { //5
+//   setTimeout(() => { 
+//     console.log('Прошла одна секунда'); 
+//     if(cb) {  cb(); } 
+//   }, 1000) 
+// }  
+// function sayHi(name) { 
+//   console.log(`Привет, ${name}!`); 
+// } 
+// delayForSecond(() => {
+//   sayHi('Глеб')
+// });
