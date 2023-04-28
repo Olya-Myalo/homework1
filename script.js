@@ -406,4 +406,129 @@ function game1() {
 // console.log(negativeNumbers); 
 
 
+// Array.from({length: 10}, () => Math.floor(Math.random() * 10)); 14
+// function newArray(numberArray.filter({$0 % 2 == 0})) {
+//   return newArray;
+//   }
+// // const newArray = numberArray.filter({$0 % 2 == 0});
+// console.log(Array);
+// console.log(newArray);
 
+// Array.from({length: 6}, () => Math.floor(Math.random() * 10)); 15
+// const getAverage = (numbers) => {
+//   let sum = 0; // объявляем переменную, в которой будет храниться сумма всех чисел массива
+//   for (let i = 0; i < numbers.length; i += 1) { // инициализируем цикл
+//     sum += numbers[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
+//   }
+//   return sum / numbers.length; // возвращаем среднее арифметическое
+// };
+
+// console.log(getAverage(Array));
+
+/////////////////////////HOMEWORK 7
+// let str = 'js';//1
+// console.log(str.toUpperCase());
+
+// function searchStart(arr, str) {//2
+//   const resultArr =[];
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
+//     }
+//   });
+//   return resultArr;
+// }
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+
+// function searchStart(arr, str) {//2
+//   const resultArr =[];
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
+//     }
+//   });
+//   return resultArr;
+// }
+// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+
+// function searchStart(arr, str) {//2
+//   const resultArr =[];
+//   arr.forEach((product) => {
+//     if (product.toLowerCase().startsWith(str.toLowerCase())) {
+//       resultArr.push(product);
+//     }
+//   });
+//   return resultArr;
+// }
+// searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
+
+// let num = 32.58884;//3
+// Math.floor(num);
+// Math.ceil(num);
+// Math.round(num);
+
+// const numbers = []; //4
+// numbers.push(52, 53, 49, 77, 21, 32)
+// const maxNumber = Math.max(...numbers);
+// const minNumber = Math.min(...numbers);
+// console.log("Наибольшее число: " + maxNumber);
+// console.log("Наименьшее число: " + minNumber);
+
+// let num = getRandomInt(1, 10);//5 
+// function getRandomInt(minValue, maxValue) {
+// return Math.random() * (maxValue - minValue) + minValue;
+// }
+// console.log(num);
+
+// let taskSix = getRandomArrNumbers(12);//6
+// function getRandomArrNumbers(num) {
+//   let arr = [];
+//   for (let i = 0; i < num / 2; i++) {
+//     arr.push(Math.floor(Math.random() * Math.floor(num)));
+//   }
+//   return arr;
+// }
+// console.log(taskSix);
+
+// let taskSeven = getRandomArrNumbers(2, 12);//7
+//  function getRandomArrNumbers(num1, num2) {
+//   return Math.round(Math.random() * (num1 - num2) + num2);
+//  }
+//  console.log(taskSeven);
+
+// let currentDate = new Date();//8
+// console.log(currentDate);
+
+// let currentDate = new Date();//9
+// let myDate = new Date(currentDate.setDate(currentDate.getDate()+73));
+// console.log(myDate); 
+
+// const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];//10
+// const months = ["января", "февраля", "марта", "апреля", "мая", "июня",
+// "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+// let myDate = new Date();
+// let fullDate.toLocaleTimeString('ru-RU') = ("Дата: " + myDate.getDate() + 
+// " " + months[myDate.getMonth()] + 
+// " " + myDate.getFullYear() + " " + "это - " + days[myDate.getDay()] +
+// ". " + "Время:" + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds());
+// console.log(fullDate); 
+
+script
+function stringEqual(str1, str2) {
+  let result = str1.toLowerCase() === str2.toLowerCase()
+  return result;
+}
+function game2() {
+  let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  arr = arr.sort(() => 0.5 - Math.random());
+  alert(arr);
+  let answerOne = prompt('Чему равнялся первый элемент массива?');
+  let answerTwo = prompt('Чему равнялся последний элемент массива?');
+  if (stringEqual(answerOne, arr[0]) && stringEqual(answerTwo, arr[6])) { 
+        alert("Поздравляю, Вы угадали оба элемента!"); 
+      } else if (stringEqual(answerOne, arr[0]) || stringEqual(answerTwo, arr[6])) { 
+        alert("Вы были близки к победе!"); 
+      } else { 
+        alert("Нет, Вы ответили неверно :("); 
+     } 
+}
