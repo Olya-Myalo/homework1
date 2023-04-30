@@ -553,30 +553,20 @@ function game2() {
 // people.sort((a, b) => a.age - b.age);
 // console.log(people);
 
-// function map(arr, mapFunction) {//2
-//   const resultArr = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     resultArr.push(mapFunction(arr[i]));
-//   }
-//   return resultArr;
-// }
-// function filter(arr, ruleFunction) {
-//   const resultArr = [];
-//   const mappedArr = map(arr, ruleFunction);
-//   for (let i = 0; i < mappedArr.length; i++) {
-//     if (mappedArr[i]) {
-//       resultArr.push(arr[i]);
-//     }
-//   }
-//   return resultArr;
-// }
-
-// function isPositive(num) {
+// function isPositive(num) {//2
 //   return num > 0;
 // }
-
 // function isMale(person) {
 //   return person.gender === 'male';
+// }
+// function filter(arr, ruleFunction) {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//       if (ruleFunction(arr[i])) {
+//           result.push(arr[i]);
+//       }
+//   }
+//   return result;
 // }
 // console.log(filter([3, -4, 1, 9], isPositive));
 // const people = [
@@ -587,8 +577,8 @@ function game2() {
 // ];
 // console.log(filter(people, isMale)); 
 
-// let date = setInterval(() => alert(new Date), 3000);//3
-// setTimeout(() => { clearInterval(date); alert('30 секунд прошло'); }, 30000);
+// let date = setInterval(() => console.log(new Date), 3000);//3
+// setTimeout(() => { clearInterval(date); console.log('30 секунд прошло'); }, 30000);
 
 // function delayForSecond(callback) {//4
 //   setTimeout(callback, 1000);
@@ -610,3 +600,4 @@ function game2() {
 // delayForSecond(() => {
 //   sayHi('Глеб')
 // });
+
