@@ -410,7 +410,7 @@ function game1() {
 // }
 // console.log(negativeNumbers); 
 
-// const arr = [];
+// const arr = [];//14
 // const newArr = [];
 // for (let i = 0; i < 10; i++) {
 //   arr.push(Math.floor(Math.random() * 10));
@@ -422,18 +422,15 @@ function game1() {
 // }
 // console.log(arr, newArr);
 
-// const arr = [];
+// const arr = [];//15
 // for (let i = 0; i < 6; i++) {
-//   arr.push(Math.floor(Math.random() * 10));
+//   arr.push(Math.ceil(Math.random() * 11));
 // }
-// function sumArr() {
-//   let sum = (); // объявляем переменную, в которой будет храниться сумма всех чисел массива
-//   for (let i = 0; i < arr.length; i += 1) { // инициализируем цикл
-//     sum += arr[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
-//   }
-//   return sum / arr.length; 
+// let sum = 0;
+//   for (let i = 0; i < arr.length; i++) { 
+//     sum += arr[i]; 
 // }
-// console.log(sumArr);
+// console.log(`Среднее арифметическое: ${sum / arr.length}`);
 
 /////////////////////////HOMEWORK 7
 // let str = 'js';//1
@@ -577,8 +574,12 @@ function game2() {
 // ];
 // console.log(filter(people, isMale)); 
 
-// let date = setInterval(() => console.log(new Date), 3000);//3
-// setTimeout(() => { clearInterval(date); console.log('30 секунд прошло'); }, 30000);
+// let date = setInterval(() => //3
+// console.log(new Date), 3000);
+// setTimeout(() => 
+// { clearInterval(date); 
+//   console.log('30 секунд прошло'); 
+// }, 30000);
 
 // function delayForSecond(callback) {//4
 //   setTimeout(callback, 1000);
